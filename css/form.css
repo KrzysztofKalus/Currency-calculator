@@ -19,7 +19,7 @@
 }
 
 .form__result {
-    color: teal;
+    color: hsl(180, 100%, 50%);
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .form__labelText {
-    color: teal;
+    color: hsl(180, 100%, 63%);
     width: 100%;
     max-width: 150px;
     display: inline-block;
