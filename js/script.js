@@ -1,9 +1,8 @@
 {
-const welcome = () => {
-    console.log("Cześć, miło mi, że tu zaglądasz");
-}
-welcome();
-
+    const welcome = () => {
+        console.log("Cześć, miło mi, że tu zaglądasz");
+    }
+    welcome();
 
     const formElement = document.querySelector(".js-form");
     const amountElement = document.querySelector(".js-amount");
