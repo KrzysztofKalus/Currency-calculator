@@ -20,18 +20,12 @@
         let result;
 
         switch (currency) {
-
             case "EURO":
                 result = amount / rateEURO;
-                break;
-
             case "USD":
                 result = amount / rateUSD;
-                break;
-
             case "GBP":
                 result = amount / rateGBP;
-                break;
         }
         resultElement.innerHTML = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency} </strong>`;
     }
