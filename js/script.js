@@ -4,23 +4,23 @@
     }
     welcome();
 
-    const formElement = document.querySelector(".js-form");
-    const amountElement = document.querySelector(".js-amount");
-    const currencyElement = document.querySelector(".js-currency");
-    const resultElement = document.querySelector(".js-result");
-
-    const rateEURO = 4.6810;
-    const rateUSD = 4.2917;
-    const rateGBP = 5.3369;
-
     const onValueCurency = (event) => {
         event.preventDefault();
+
+        const currencyElement = document.querySelector(".js-currency");
+        const amountElement = document.querySelector(".js-amount");
+        const resultElement = document.querySelector(".js-result");
+
+        const rateEURO = 4.6810;
+        const rateUSD = 4.2917;
+        const rateGBP = 5.3369;
 
         const amount = +amountElement.value;
         const currency = currencyElement.value;
         let result;
 
         switch (currency) {
+
             case "EURO":
                 result = amount / rateEURO;
                 break;
@@ -37,6 +37,7 @@
     }
 
     const init = () => {
+        const formElement = document.querySelector(".js-form");
         formElement.addEventListener("click", onValueCurency);
     }
     init();
