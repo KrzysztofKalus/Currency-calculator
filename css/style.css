@@ -9,11 +9,7 @@ html {
 .body {
     font-family: Lato, sans-serif;
     color: #222;
-
-}
-
-.element {
     background-image: url("../images/planet-1702788_1920.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;   
 }
