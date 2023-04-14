@@ -3,8 +3,6 @@ const welcome = () => {
 }
 welcome();
 
-
-
 {
     const formElement = document.querySelector(".js-form");
     const amountElement = document.querySelector(".js-amount");
