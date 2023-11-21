@@ -7,8 +7,8 @@
     const onValueCurency = (event) => {
         event.preventDefault();
 
-        const currencyElement = document.querySelector(".js-currency");
         const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
         const resultElement = document.querySelector(".js-result");
 
         const rateEURO = 4.6810;
@@ -22,10 +22,13 @@
         switch (currency) {
             case "EURO":
                 result = amount / rateEURO;
+                break;
             case "USD":
                 result = amount / rateUSD;
+                break;
             case "GBP":
                 result = amount / rateGBP;
+                break;
         }
         resultElement.innerHTML = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency} </strong>`;
     }
